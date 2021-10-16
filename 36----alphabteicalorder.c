@@ -1,10 +1,12 @@
 #include<stdio.h>
 #include<string.h>
-main()
+int main()
 {
     int i,p,j,n;
-    printf("enter no. of string");
+    printf("This is a program to get numbers in ascending order\n");
+    printf("Enter the total number you wants to get in ascending order\n");
     scanf("%d",&n);
+    printf("Now Enter the numbers you wants to get in ascending order\n");
     char s[n][100],temp[100];
     for(p=0;p<n;p++)
     scanf("%s",s[p]);
@@ -22,7 +24,7 @@ main()
         }
     }
 
-    printf("order\n");
+    printf("Numbers in ascending order\n");
     for(int k=0;k<n;k++)
         puts(s[k]);
 }
